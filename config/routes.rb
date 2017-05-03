@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "flights#index"
+
   get '/homepage' => 'pages#index'
   get '/about' => 'pages#about_page'
   get '/error_page' => 'pages#error_page'
